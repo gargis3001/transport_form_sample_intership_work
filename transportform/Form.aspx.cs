@@ -8,7 +8,7 @@ namespace TransportBill
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string connectionString = "User Id=C##GARGI;Password=gargi125;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)))";
+            string connectionString = "User Id=;Password=;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orcl)))";
 
             using (OracleConnection conn = new OracleConnection(connectionString))
             {
@@ -85,7 +85,7 @@ namespace TransportBill
         // Method to save data to TRANSPORT_BILL table
         protected void SaveData(object sender, EventArgs e)
         {
-            string connectionString = "User Id=C##GARGI;Password=gargi125;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCL)))";
+            string connectionString = "User Id=;Password=;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=ORCL)))";
 
             try
             {
